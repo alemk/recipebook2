@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=" www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+    <link th:href="@{'/css/stylesheet.css'}" rel="stylesheet"/>
+    <link href="/css/stylesheet.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="nav"> <!-- navigation begins here -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Recipe_book</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{'/'}">home</a></li>
+                <li class="active"><a th:href="@{'injera'}">Injera</a></li>
+                <li><a th:href="@{'crabby'}">Crabby cake</a></li>
+                <li><a th:href="@{'golabjamun'}">Golab-Jamun</a></li>
+                <li><a th:href="@{'jerkchicken'}">Jerk-Chicken</a></li>
+                <li><a th:href="@{'pumkinricenoodles'}">Pumkin-Rice-Noodles</a></li>
+                <li><a th:href="@{'bara'}">Bara</a></li>
+                <li><a th:href="@{'croquemadame'}">Croque-Madame</a></li>
+                <li><a th:href="@{'gallery'}">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+</div> <!-- navigation ends here-->
+
+<div class="container" >
+
+    <div class="row" >
+        <div class="col-sm-4" >
+            <img class="img-flag headermargin" src="/images/nepalflag.png" alt="Nepali Flag"/>
+        </div>
+        <div class="col-sm-8 ">
+            <h1>Bara - Nepali food recipe</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 cup black lentils</li>
+                <li>2 eggs, beaten</li>
+                <li>1⁄2 lb lean ground chicken (Lamb or pork can also be used. Minced vegetables are used for vegetarian cooking)</li>
+                <li>1 tablespoon garlic, minced</li>
+                <li>3 green chilies, minced</li>
+                <li>1⁄2 teaspoon turmeric</li>
+                <li>1⁄4 teaspoon asafoetida powder</li>
+                <li>salt and pepper</li>
+                <li>2 tablespoons oil (for mixture)</li>
+                <li>1⁄2 cup oil (for cooking)</li>
+            </ul>
+        </div>
+        <div class="col-sm-7">
+            <h2>Directions</h2>
+            <p>In a large bowl, soak the lentils overnight. Next day, rinse the soaked lentils thoroughly.</p>
+            <p>If no outer skin of the lentils is desired, you can rub the soaked lentils between your palms and the outer skin will wash off.</p>
+            <p>Transfer the washed lentils to a large blender, add a small amount of water, and blend it into a thick paste.</p>
+            <p>Transfer the lentil mixture to a large mixing bowl. Add the oil, minced garlic, ginger and green chilies.</p>
+            <p>Add turmeric, asafoetida, and salt and pepper.</p>
+            <p>Add the beaten eggs and ground meat. Combine the lentil mixture thoroughly. At this point, it is better to store the lentil mixture in the refrigerator for a couple of hours to allow for the flavours to fuse.</p>
+            <p>For cooking, heat 2 tablespoons of cooking oil in a non-stick, thick-bottomed pan or tawa under medium heat.</p>
+            <p>Pour a half cup of the lentil mixture onto the pan and gently spread the mixture into the shape of a mini-pancake.</p>
+            <p>Repeat with other patties, ensuring to not overcrowd the pan so that you can turn over the patties more easily.</p>
+
+            <p>Cook the patties on one side until the edges have crisped up and the patties themselves have attained a golden brown colour.</p>
+            <p>Turn the patties over onto the other side and cook until the patties have cooked and are golden brown.</p>
+
+            <p>You can use paper towel to remove any excess oil if required.</p>
+
+            <p>Transfer to a serving dish and serve hot with mango chutney or any other condiment.</p>
+            <p>It is also common to add an egg topping or a minced meat topping or whatever toppings you desire.</p>
+            <p>For convenience, an alternative to cooking your baras in a pan is using a waffle machine.</p>
+            <p>For this, heat up your waffle machine and using oil spray coat the top and bottom surfaces.
+                Pour a half cup of the lentil mixture on the bottom surface, gently spread out the mixture, and close the lid to cook.
+                Cook until the lentil patty is cooked and has attained a golden brown colour, approximately 5-7 minutes.</p>
+            <p>Baking is another healthy way to cook baras.</p>
+            <div class="row">
+
+                <div class="col-4" align="left">
+                    <img src="/images/bara1.jpeg" alt="bara food dish"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

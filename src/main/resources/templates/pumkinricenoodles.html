@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=" www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+    <link th:href="@{'/css/stylesheet.css'}" rel="stylesheet"/>
+    <link href="/css/stylesheet.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="nav"> <!-- navigation begins here -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Recipe_book</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{'/'}">home</a></li>
+                <li><a th:href="@{'injera'}">Injera</a></li>
+                <li><a th:href="@{'crabby'}">Crabby cake</a></li>
+                <li><a th:href="@{'golabjamun'}">Golab-Jamun</a></li>
+                <li><a th:href="@{'jerkchicken'}">Jerk-Chicken</a></li>
+                <li class="active"><a th:href="@{'pumkinricenoodles'}">Pumkin-Rice-Noodles</a></li>
+                <li><a th:href="@{'bara'}">Bara</a></li>
+                <li><a th:href="@{'croquemadame'}">Croque-Madame</a></li>
+                <li><a th:href="@{'gallery'}">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+</div> <!-- navigation ends here-->
+
+<div class="container" >
+    <div class="row" >
+        <div class="col-sm-4" >
+            <img class="img-flag headermargin" src="/images/taiwanflag.jpeg" alt="Taiwan Flag"/>
+        </div>
+        <div class="col-sm-8 ">
+            <h1>Pumkin rice noodles -Taiwan</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>100g (3.5 oz) dried rice vermicelli</li>
+                <li>2 tablespoons oil</li>
+                <li>2 cloves garlic, minced</li>
+                <li>100g (3.5 oz) ground pork</li>
+                <li>100g (3.5 oz) pumpkin (or kabocha), diced</li>
+                <li>½ cup water</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>1 tablespoon sweet soy sauce</li>
+                <li>3 dashes white pepper</li>
+            </ul>
+        </div>
+        <div class="col-sm-7">
+            <h2>Directions</h2>
+            <ol>
+
+                <li>Soak the dried rice vermicelli in warm water for about 20 minutes. Drain the water and set aside.</li>
+                <li>Heat up the oil in a wok and add the garlic. Stir-fry the garlic until aromatic before adding the ground pork and pumpkin.</li>
+                <li>Add the water, soy sauce, sweet soy sauce, white pepper and bring to boil.</li>
+                <li>Add the rice vermicelli into the wok, stir to combine well with the ingredients in the wok. Continue to stir fry until the vermicelli is cooked through and soaked up the sauce.</li>
+                <li>Dish out and serve immediately.</li>
+            </ol>
+            <div class="row">
+
+                <div class="col-4" align="left">
+
+
+                    <img class="img-fluid" src="/images/PumpkinRiceNoodles1.jpg" alt="Pumpkin Rice Noodles image"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

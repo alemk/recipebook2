@@ -1,0 +1,11 @@
+.homebody {
+    background-image: url("/images/bgpicture.png");
+    background-repeat: repeat;
+}
+.headermargin{
+    margin-left: 20px;
+}
+.img-flag{
+    height: 200px;
+    width: 300px;
+}
